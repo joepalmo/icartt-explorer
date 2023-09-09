@@ -1,12 +1,15 @@
 import React from 'react';
 import Map from './Map';
-// import Upload from './components/Upload'
 
 function App() {
   return (
     <div>
       <Map />
-      {/* <Upload /> */}
+      <form action="upload" method="post" encType="multipart/form-data">
+        <input type="file" name="file"></input>
+        <br></br>
+        <input type="submit" value="Upload"></input>
+      </form>
     </div>
   );
 }
